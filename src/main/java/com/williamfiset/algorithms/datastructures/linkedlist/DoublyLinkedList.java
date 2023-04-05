@@ -251,6 +251,25 @@ public class DoublyLinkedList<T> implements Iterable<T> {
     }
     return -1;
   }
+  
+//   Thanks for the awesome explanation. I am also commenting the code for reversing the doubly linked list if it helps someone.
+//   public void reverse()
+// 	{
+// 		if (isEmpty())
+// 			return;
+// 		Node temp = null;
+// 		Node current = first;
+// 		while (current != null)
+// 		{
+// 			temp = current.previous;
+// 			current.previous= current.next; 
+// 			current.next = temp; 
+// 			current= current.previous;
+// 		}
+// 		if (temp != null) {
+// 			first = temp.previous;
+// 		}
+// 	}
 
   // Check is a value is contained within the linked list
   public boolean contains(Object obj) {
